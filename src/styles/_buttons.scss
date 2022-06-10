@@ -1,0 +1,13 @@
+.button-primary {
+  @include button;
+  background-color: $hospital-green;
+  color: $white;
+}
+
+.button-secondary {
+  @include button;
+  background-color: $white;
+  color: $hospital-green;
+  border: 2px solid $hospital-green;
+  margin-top: 80px;
+}

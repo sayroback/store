@@ -15,4 +15,8 @@
     padding: 6px;
     margin-bottom: 12px;
   }
+  input::placeholder {
+    font-size: $sm;
+    padding-left: 8px;
+  }
 }

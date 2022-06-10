@@ -1,29 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ButtonPrimary } from "../components/ButtonPrimary";
-import { ButtonSecondary } from "../components/ButtonSecondary";
 import { Input } from "../components/Input";
 import { Logo } from "../components/Logo";
-import { TextLink } from "../components/TextLink";
+import { Titles } from "../components/Titles";
 
-export const Login = () => {
+export const CreateAccount = () => {
   return (
     <div className="login">
-      <div className="form" id="down">
+      <div id="down" className="form">
         <div>
-          <Logo />
+          {/* <Logo /> */}
+          <Titles title="My account" />
           <form action="">
+            <Input label="Name" placeholder="Your Name" />
             <Input label="Email address" placeholder="example@gmail.com" />
             <Input label="Password" placeholder="******" />
-            <Link to="/">
-              <ButtonPrimary>Confirm</ButtonPrimary>
-            </Link>
           </form>
-          <TextLink link="Forgot my password" url="password_recovery1" />
         </div>
-        <Link to="/singup">
-          <ButtonSecondary>Sing up</ButtonSecondary>
-        </Link>
+        <div className="down">
+          <Link to="/login">
+            <ButtonPrimary>Create account</ButtonPrimary>
+          </Link>
+        </div>
       </div>
     </div>
   );
