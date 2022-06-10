@@ -1,0 +1,18 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    font-size: $sm;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  input {
+    background-color: $text-input-field;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: $md;
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+}

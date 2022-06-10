@@ -1,0 +1,16 @@
+.logo {
+  display: none;
+  margin: 48px;
+  &__icon {
+    color: $hospital-green;
+  }
+  &__title {
+    color: $dark;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: flex;
+  }
+}
