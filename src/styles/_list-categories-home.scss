@@ -1,0 +1,15 @@
+.list-categories--home {
+  display: flex;
+  margin-top: 24px;
+  position: relative;
+  &__item {
+    list-style: none;
+    padding: 6px 15px;
+    color: $very-light-pink;
+  }
+}
+.active {
+  color: $hospital-green;
+  border: 1px solid $hospital-green;
+  border-radius: 10px;
+}

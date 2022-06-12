@@ -1,0 +1,29 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
+  width: 100%;
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $text-input-field;
+    border-radius: 8px;
+    &__input:focus-visible {
+      outline: none;
+    }
+    &__input::placeholder {
+      color: $very-light-pink;
+    }
+    &__input {
+      margin: 10px;
+      width: 80%;
+      height: 25px;
+      padding-left: 15px;
+      font-size: 16px;
+      color: $dark;
+      border: none;
+      background-color: $text-input-field;
+    }
+  }
+}

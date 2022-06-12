@@ -9,9 +9,12 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .logo {
     display: flex;
     justify-content: center;
+  }
+  #header {
+    margin: 0;
   }
 }

@@ -1,0 +1,56 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 34px;
+  justify-content: center;
+}
+
+.product {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  &__container__details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__description {
+    color: $very-light-pink;
+  }
+  &__icon {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: $hospital-green;
+    color: $white;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    bottom: 40px;
+    span {
+      display: grid;
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      align-content: center;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 24px;
+  }
+}
