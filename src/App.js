@@ -7,6 +7,7 @@ import { NewPassword } from "./pages/NewPassword";
 import PasswordRecovery2 from "./pages/PasswordRecovery2";
 import { PasswordRecovery1 } from "./pages/PasswordRecovery1";
 import { CreateAccount } from "./pages/CreateAccount";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
           />
           <Route path="/singup" element={<CreateAccount />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

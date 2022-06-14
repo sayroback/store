@@ -1,7 +1,14 @@
+.list-categories__container::-webkit-scrollbar {
+  display: none;
+}
+.list-categories__container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .list-categories--home {
   display: flex;
-  margin-top: 24px;
-  position: relative;
+
   &__item {
     list-style: none;
     padding: 6px 15px;
@@ -12,4 +19,9 @@
   color: $hospital-green;
   border: 1px solid $hospital-green;
   border-radius: 10px;
+}
+@media (min-width: 769px) {
+  .list-categories__container ul {
+    display: none;
+  }
 }

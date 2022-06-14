@@ -10,7 +10,7 @@ export const Home = () => {
       <Header />
       <main>
         <SearchBar />
-        <ListCategories />
+        <ListCategories className="list-categories__container" />
         <Product />
       </main>
     </div>

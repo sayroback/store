@@ -2,11 +2,18 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 15px;
-  margin-bottom: 8px;
+  margin: 8px 30px;
+
   border-bottom: 2px solid $text-input-field;
   &__logo {
     text-decoration: none;
   }
+}
+.header-left {
+  display: flex;
+}
+#header__list {
+  display: flex;
 }
 
 #herder-icon {
@@ -14,12 +21,31 @@
   margin: auto 0;
   cursor: pointer;
 }
-#search-icon {
-  display: flex;
-  justify-content: center;
-  background-color: $text-input-field;
-  font-variation-settings: "wght" 700;
-  font-size: 25px;
-  color: $very-light-pink;
-  margin: auto 0;
+@media (min-width: 769px) {
+  #herder-icon {
+    display: none;
+  }
+  #header__logo {
+    display: flex;
+    margin: auto 0;
+  }
+  #header__list {
+    margin: 8px 0;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 769px) {
+  #header__logo {
+    display: flex;
+    margin: auto 0;
+  }
+  #header__list {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .header {
+    margin: 0;
+  }
 }

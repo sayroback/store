@@ -1,0 +1,24 @@
+.footer {
+  background-color: $hospital-green;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  &__links {
+    display: flex;
+    font-size: 12px;
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: $white;
+      margin-left: 14px;
+    }
+  }
+}
+
+.icon--footer {
+  font-size: 2px;
+  width: 35px;
+  height: 35px;
+}

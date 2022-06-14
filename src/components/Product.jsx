@@ -22,7 +22,7 @@ export const Product = () => {
       </div>
       <div className="product">
         <img
-          src="https://http2.mlstatic.com/D_NQ_NP_2X_942262-MLA45883011099_052021-F.webp"
+          src="https://http2.mlstatic.com/D_NQ_NP_855903-MLM50123088300_052022-O.webp"
           alt="product"
           className="product__img"
         />
