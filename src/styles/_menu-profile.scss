@@ -1,0 +1,59 @@
+.menu-profile {
+  &__icon {
+    font-variation-settings: "FILL" 1;
+    color: $very-light-pink;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  &__box {
+    background-color: $white;
+    position: absolute;
+    right: 60px;
+    top: 75px;
+    display: grid;
+    justify-items: end;
+    // border: 2px solid $text-input-field;
+    border-radius: 4px;
+    box-shadow: 1px 2px 15px 3px $very-light-pink;
+    &__list {
+      display: grid;
+      justify-content: end;
+      list-style: none;
+      width: 150px;
+      border-bottom: 2px solid $text-input-field;
+      &__item {
+        box-sizing: border-box;
+        width: 150px;
+        padding: 16px 20px;
+        font-weight: bold;
+        text-align: end;
+        cursor: pointer;
+      }
+      &__item:hover {
+        background-color: $text-input-field;
+      }
+    }
+    &__link {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: end;
+      cursor: pointer;
+      padding: 14px 20px;
+    }
+    &__link:hover {
+      background-color: $text-input-field;
+    }
+    .login__link__a {
+      font-size: 14px;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .menu-profile {
+    display: none;
+  }
+}

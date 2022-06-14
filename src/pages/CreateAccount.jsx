@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ButtonPrimary } from "../components/ButtonPrimary";
+import { Header } from "../components/Header";
 import { Input } from "../components/Input";
-import { Logo } from "../components/Logo";
+
 import { Titles } from "../components/Titles";
 
 export const CreateAccount = () => {
@@ -10,7 +11,7 @@ export const CreateAccount = () => {
     <div className="login">
       <div id="down" className="form">
         <div>
-          {/* <Logo /> */}
+          <Header />
           <Titles title="My account" />
           <form action="">
             <Input label="Name" placeholder="Your Name" />
