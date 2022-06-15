@@ -23,6 +23,7 @@ const PasswordRecovery2 = () => {
             <ButtonPrimary>Login</ButtonPrimary>
           </Link>
           <TextLink
+            classLink={"login__link"}
             label="Didn't receive the email?"
             link="Resend"
             url="/password_recovery1"

@@ -1,31 +1,31 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   padding-top: 20px;
   width: 60vw;
   top: 66px;
   left: 0;
-  height: 100%;
   background-color: $white;
   z-index: 1;
   &__title {
     padding-left: 40px;
+    font-size: 18px;
   }
   &__list {
-    box-sizing: border-box;
     list-style: none;
     padding-top: 20px;
     width: 100%;
+    font-size: 16px;
     li {
       width: 100%;
       text-align: left;
       padding: 20px 40px;
+      cursor: pointer;
     }
-    .my-orders {
-      padding-top: 40px;
+    li:hover {
+      background-color: $text-input-field;
     }
   }
-  .menu-profile__box__link {
-    text-align: left;
-    padding-left: 40px;
+  &__menu-profile {
+    padding-top: 30px;
   }
 }

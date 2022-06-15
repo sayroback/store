@@ -18,7 +18,11 @@ export const Login = () => {
                 <ButtonPrimary>Confirm</ButtonPrimary>
               </Link>
             </form>
-            <TextLink link="Forgot my password" url="password_recovery1" />
+            <TextLink
+              classLink={"login__link"}
+              link="Forgot my password"
+              url="password_recovery1"
+            />
           </div>
           <Link to="/sing-up">
             <ButtonSecondary>Sing up</ButtonSecondary>

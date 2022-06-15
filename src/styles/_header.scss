@@ -27,7 +27,7 @@
   margin: auto 0;
   cursor: pointer;
 }
-@media (min-width: 769px) {
+@media (min-width: 1076px) {
   #herder-icon {
     display: none;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1076px) {
   #header__logo {
     display: flex;
     margin: auto 0;

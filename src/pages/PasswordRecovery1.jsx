@@ -20,7 +20,11 @@ export const PasswordRecovery1 = () => {
               <ButtonPrimary>Submit</ButtonPrimary>
             </Link>
           </form>
-          <TextLink link="Back to log in" url="/login" />
+          <TextLink
+            classLink={"login__link"}
+            link="Back to log in"
+            url="/login"
+          />
         </div>
       </div>
     </>

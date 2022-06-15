@@ -23,13 +23,15 @@ export const Header = ({ setSidebarOpen }) => {
       </div>
       <div className="header-right">
         <div
-          className="menu-profile"
+          className="menu-profile--header"
           onClick={() => setMenuProfile((prevState) => !prevState)}
         >
           <Icon className="menu-profile__icon">person</Icon>
-          <div className="menu-profile__box">
-            {!!menuProfile && <MenuProfile />}
-          </div>
+          {!!menuProfile && (
+            <div className="menu-profile__box">
+              <MenuProfile className={"menu-profile__box__list"} />
+            </div>
+          )}
         </div>
 
         <Icon>shopping_cart</Icon>

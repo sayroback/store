@@ -1,18 +1,24 @@
 import React from "react";
 import { TextLink } from "../TextLink";
 
-export const MenuProfile = () => {
+export const MenuProfile = ({ ...rest }) => {
   return (
-    <>
-      <ul className="menu-profile__box__list">
-        <li className="menu-profile__box__list__item">My orders</li>
-        <li className="menu-profile__box__list__item">My account</li>
-      </ul>
+    <div className={`menu-profile ${rest.className}`}>
       <TextLink
-        className="menu-profile__box__link"
+        classLink={"menu-profile__link"}
+        label={"My account"}
+        url={"/my-order"}
+      />
+      <TextLink
+        classLink={"menu-profile__link"}
+        label={"My orders"}
+        url={"/my-order"}
+      />
+      <TextLink
+        classLink={"menu-profile__link"}
         link={"Login"}
         url={"/login"}
       />
-    </>
+    </div>
   );
 };

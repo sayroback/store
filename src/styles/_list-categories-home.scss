@@ -13,6 +13,7 @@
     list-style: none;
     padding: 6px 15px;
     color: $very-light-pink;
+    white-space: nowrap;
   }
 }
 .active {
@@ -20,7 +21,7 @@
   border: 1px solid $hospital-green;
   border-radius: 10px;
 }
-@media (min-width: 769px) {
+@media (min-width: 1076px) {
   .list-categories__container ul {
     display: none;
   }

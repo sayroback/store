@@ -5,6 +5,11 @@
   place-items: center;
   align-content: space-between;
   padding-top: 70px;
+  &__link {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+  }
 }
 .form {
   display: grid;
@@ -41,8 +46,6 @@
   }
 }
 .login__link {
-  text-align: center;
-  margin-top: 20px;
   &__text {
     color: $dark;
   }

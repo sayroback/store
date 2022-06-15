@@ -12,6 +12,7 @@ import { ContextProvider } from "./data/Context";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Header/Sidebar";
 import styled from "styled-components";
+import { MyOrders } from "./pages/MyOrders";
 
 export const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -40,7 +41,7 @@ export const App = () => {
             element={<PasswordRecovery2 />}
           />
           <Route path="/sing-up" element={<CreateAccount />} />
-          <Route path="/my-order" element={<CreateAccount />} />
+          <Route path="/my-order" element={<MyOrders />} />
         </Routes>
         <Footer />
       </BrowserRouter>

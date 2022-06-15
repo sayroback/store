@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../../data/Context";
-import { TextLink } from "../TextLink";
+import { MenuProfile } from "./MenuProfile";
 
 export const Sidebar = () => {
   const { categories } = useContext(Context);
@@ -16,15 +16,8 @@ export const Sidebar = () => {
               {category.name}
             </li>
           ))}
-
-        <li className="menu-profile__box__list__item my-orders">My orders</li>
-        <li className="menu-profile__box__list__item">My account</li>
       </ul>
-      <TextLink
-        className="menu-profile__box__link"
-        link={"Login"}
-        url={"/login"}
-      />
+      <MenuProfile className={"sidebar__menu-profile"} />
     </div>
   );
 };

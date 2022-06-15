@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 export const TextLink = ({ link, url, label, ...rest }) => {
   return (
-    <Link className="login__link__a" to={url}>
-      <div className={`login__link ${rest.className}`}>
-        <small className="login__link__text"> {label}</small> {link}
-      </div>
+    <Link className={`link ${rest.classLink}`} to={url}>
+      {!!label && <p className={`label ${rest.classLabel}`}>{`${label}`}</p>}
+      {!!link && <p className={`text ${rest.classText}`}>{`${link}`}</p>}
     </Link>
   );
 };

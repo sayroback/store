@@ -9,7 +9,13 @@ export const Home = () => {
       <main>
         <SearchBar />
         <ListCategories className="list-categories__container" />
-        <Product />
+        <div className="products">
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </div>
       </main>
     </div>
   );

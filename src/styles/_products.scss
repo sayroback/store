@@ -22,9 +22,11 @@
   }
   &__title {
     font-weight: bold;
+    font-size: 16px;
   }
   &__description {
     color: $very-light-pink;
+    font-size: 14px;
   }
   &__icon {
     display: grid;
