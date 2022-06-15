@@ -1,0 +1,30 @@
+.my-orders {
+  padding-bottom: 20px;
+  &__title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}
+.order-resume {
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $text-input-field;
+  border-radius: 12px;
+
+  &__details {
+    &__date {
+      font-weight: bold;
+    }
+    &__item-number {
+      color: $very-light-pink;
+    }
+  }
+  &__total {
+    font-weight: bold;
+  }
+}
