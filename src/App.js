@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/store.scss";
 import { Home } from "./pages/Home";
@@ -8,11 +8,25 @@ import PasswordRecovery2 from "./pages/PasswordRecovery2";
 import { PasswordRecovery1 } from "./pages/PasswordRecovery1";
 import { CreateAccount } from "./pages/CreateAccount";
 import { Footer } from "./components/Footer";
+import { ContextProvider } from "./data/Context";
+import { Header } from "./components/Header";
+import { Sidebar } from "./components/Header/Sidebar";
+import styled from "styled-components";
 
 export const App = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const SidebarView = styled.div`
+    display: ${!!sidebarOpen ? "block" : "none"};
+  `;
+
   return (
-    <div>
+    <ContextProvider>
       <BrowserRouter>
+        <Header setSidebarOpen={setSidebarOpen} />
+        <SidebarView>
+          <Sidebar />
+        </SidebarView>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login/" exact element={<Login />} />
@@ -25,10 +39,11 @@ export const App = () => {
             path="/login/password_recovery2"
             element={<PasswordRecovery2 />}
           />
-          <Route path="/singup" element={<CreateAccount />} />
+          <Route path="/sing-up" element={<CreateAccount />} />
+          <Route path="/my-order" element={<CreateAccount />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
-    </div>
+    </ContextProvider>
   );
 };

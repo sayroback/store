@@ -1,6 +1,6 @@
 import React from "react";
-import { GitHubIcon } from "./GitHubIcon";
-import LinkedInIcon from "./LinkedInIcon";
+import { GitHubIcon } from "./icons/GitHubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
 
 export const Footer = () => {
   return (

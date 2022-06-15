@@ -1,5 +1,5 @@
 import React from "react";
-import { TextLink } from "./TextLink";
+import { TextLink } from "../TextLink";
 
 export const MenuProfile = () => {
   return (
@@ -10,7 +10,7 @@ export const MenuProfile = () => {
       </ul>
       <TextLink
         className="menu-profile__box__link"
-        link={"Sing in"}
+        link={"Login"}
         url={"/login"}
       />
     </>

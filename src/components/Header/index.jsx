@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Icon } from "./Icon";
+import { Icon } from "../icons/Icon";
 import { ListCategories } from "./ListCategories";
 import { Logo } from "./Logo";
 import { MenuProfile } from "./MenuProfile";

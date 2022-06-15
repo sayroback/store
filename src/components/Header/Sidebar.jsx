@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Context } from "../data/Context";
-import { TextLink } from "./TextLink";
+import { Context } from "../../data/Context";
+import { TextLink } from "../TextLink";
 
 export const Sidebar = () => {
   const { categories } = useContext(Context);
@@ -22,7 +22,7 @@ export const Sidebar = () => {
       </ul>
       <TextLink
         className="menu-profile__box__link"
-        link={"Sing in"}
+        link={"Login"}
         url={"/login"}
       />
     </div>

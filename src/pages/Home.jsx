@@ -1,11 +1,16 @@
 import React from "react";
-import { HomeUI } from "../components/HomeUI";
-import { ContextProvider } from "../data/Context";
+import { ListCategories } from "../components/Header/ListCategories";
+import { Product } from "../components/Product";
+import { SearchBar } from "../components/SearchBar";
 
 export const Home = () => {
   return (
-    <ContextProvider>
-      <HomeUI />
-    </ContextProvider>
+    <div>
+      <main>
+        <SearchBar />
+        <ListCategories className="list-categories__container" />
+        <Product />
+      </main>
+    </div>
   );
 };

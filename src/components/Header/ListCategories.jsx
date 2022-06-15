@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "../data/Context";
+import { Context } from "../../data/Context";
 
 export const ListCategories = ({ ...rest }) => {
   const { categories } = useContext(Context);
