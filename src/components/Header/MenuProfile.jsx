@@ -12,7 +12,7 @@ export const MenuProfile = ({ ...rest }) => {
       <TextLink
         classLink={"menu-profile__link"}
         label={"My orders"}
-        url={"/my-order"}
+        url={"/my-orders"}
       />
       <TextLink
         classLink={"menu-profile__link"}

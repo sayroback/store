@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { OrderResume } from "../components/OrderResume";
-import { ProductResume } from "../components/ProductResume";
 
 export const MyOrders = () => {
   return (
     <main className="my-orders">
-      <h1 className="my-orders__title">MyOrders</h1>
+      <h1 className="my-orders__title">My orders</h1>
+      <Link className="link-order" to="/order">
+        <OrderResume />
+      </Link>
       <OrderResume />
-      <ProductResume />
-      <ProductResume />
-      <ProductResume />
-      <ProductResume />
-      <ProductResume />
-      <ProductResume />
+      <OrderResume />
+      <OrderResume />
+      <OrderResume />
+      <OrderResume />
     </main>
   );
 };
