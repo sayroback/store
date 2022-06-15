@@ -3,13 +3,13 @@ import { Categories } from "./Categories";
 const Context = createContext();
 
 const ContextProvider = (props) => {
-  const { categories, setCategories } = Categories();
+  const { categories, getCategories } = Categories();
 
   return (
     <Context.Provider
       value={{
         categories,
-        setCategories,
+        getCategories,
       }}
     >
       {props.children}

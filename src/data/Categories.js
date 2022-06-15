@@ -6,19 +6,24 @@
 
 import { useEffect } from "react";
 import { useState } from "react";
+import axios from "axios";
 
 export const Categories = () => {
-  const categoriesURL = "https://api.escuelajs.co/api/v1/categories";
   const [categories, setCategories] = useState();
 
-  async function getCategories() {
-    const res = await fetch(categoriesURL);
-    const data = await res.json();
-    setCategories(data);
-  }
+  const getCategories = async () => {
+    try {
+      const res = await axios.get("https://api.escuelajs.co/api/v1/categories");
+      console.log(res.data);
+      setCategories(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getCategories();
   }, []);
 
-  return { categories, setCategories };
+  return { categories, getCategories };
 };

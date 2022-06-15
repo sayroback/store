@@ -4,8 +4,6 @@ import { Context } from "../data/Context";
 export const ListCategories = ({ ...rest }) => {
   const { categories } = useContext(Context);
 
-  console.log(categories);
-
   return (
     <div id={`${rest.id}`} className={`${rest.className}`}>
       <ul className={`list-categories--home ${rest.className}`}>
@@ -22,11 +20,3 @@ export const ListCategories = ({ ...rest }) => {
     </div>
   );
 };
-
-/* <li className="list-categories--home__item active">All</li>
-<li className="list-categories--home__item">una</li>
-<li className="list-categories--home__item">una</li>
-<li className="list-categories--home__item">una</li>
-<li className="list-categories--home__item">una</li>
-<li className="list-categories--home__item">una</li>
-<li className="list-categories--home__item">una</li> */
