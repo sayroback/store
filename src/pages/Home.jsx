@@ -1,6 +1,6 @@
 import React from "react";
 import { ListCategories } from "../components/Header/ListCategories";
-import { Product } from "../components/Product";
+import { ProductHome } from "../components/ProductHome";
 import { SearchBar } from "../components/SearchBar";
 
 export const Home = () => {
@@ -10,11 +10,11 @@ export const Home = () => {
         <SearchBar />
         <ListCategories className="list-categories__container" />
         <div className="products">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          <ProductHome />
+          <ProductHome />
+          <ProductHome />
+          <ProductHome />
+          <ProductHome />
         </div>
       </main>
     </div>

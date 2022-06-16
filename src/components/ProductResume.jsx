@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProductResume = () => {
+export const ProductResume = ({ children }) => {
   return (
     <div className="product-resume">
       <div className="product-resume--left">
@@ -11,7 +11,10 @@ export const ProductResume = () => {
         />
         <p className="product-resume__name">Colchón</p>
       </div>
-      <p className="product-resume__price">$ 120.00</p>
+      <div className="shopping-cart__left">
+        <p className="product-resume__price">$ 120.00</p>
+        <div>{children}</div>
+      </div>
     </div>
   );
 };

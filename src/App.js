@@ -14,6 +14,8 @@ import { Sidebar } from "./components/Header/Sidebar";
 import styled from "styled-components";
 import { MyOrders } from "./pages/MyOrders";
 import { Order } from "./pages/Order";
+import { ProductPage } from "./pages/ProductPage";
+import { ShoppingCart } from "./pages/ShoppingCart";
 
 export const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -44,6 +46,8 @@ export const App = () => {
           <Route path="/sing-up" element={<CreateAccount />} />
           <Route path="/my-orders" element={<MyOrders />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

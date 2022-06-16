@@ -33,8 +33,9 @@ export const Header = ({ setSidebarOpen }) => {
             </div>
           )}
         </div>
-
-        <Icon>shopping_cart</Icon>
+        <Link className="link" to="/shopping-cart">
+          <Icon>shopping_cart</Icon>
+        </Link>
       </div>
     </div>
   );

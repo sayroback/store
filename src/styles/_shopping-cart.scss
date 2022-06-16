@@ -1,0 +1,10 @@
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  .product-resume {
+  }
+}

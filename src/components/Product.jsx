@@ -1,41 +1,22 @@
 import React from "react";
+import { ButtonPrimary } from "./ButtonPrimary";
 import { Icon } from "./icons/Icon";
 
 export const Product = () => {
   return (
-    <>
-      <div className="product">
-        <img
-          src="https://http2.mlstatic.com/D_NQ_NP_2X_942262-MLA45883011099_052021-F.webp"
-          alt="product"
-          className="product__img"
-        />
-        <div className="product__container__details">
-          <div>
-            <h3 className="product__title">Product</h3>
-            <p className="product__description">Descripción</p>
-          </div>
-          <div className="product__icon">
-            <Icon>add_shopping_cart</Icon>
-          </div>
-        </div>
-      </div>
-      <div className="product">
-        <img
-          src="https://http2.mlstatic.com/D_NQ_NP_855903-MLM50123088300_052022-O.webp"
-          alt="product"
-          className="product__img"
-        />
-        <div className="product__container__details">
-          <div>
-            <h3 className="product__title">Product</h3>
-            <p className="product__description">Descripción</p>
-          </div>
-          <div className="product__icon">
-            <Icon>add_shopping_cart</Icon>
-          </div>
-        </div>
-      </div>
-    </>
+    <aside className="product-page">
+      <img
+        className="product-page product__img"
+        src="https://http2.mlstatic.com/D_NQ_NP_855903-MLM50123088300_052022-O.webp"
+        alt=""
+      />
+      <p className="order-resume__total">$210</p>
+      <p className="product__title">Title</p>
+      <p className="product__description">Description</p>
+      <ButtonPrimary className="product-page__button">
+        <Icon className="product-page__button__icon">add_shopping_cart</Icon>
+        <p>Add to cart</p>
+      </ButtonPrimary>
+    </aside>
   );
 };
