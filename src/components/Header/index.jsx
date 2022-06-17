@@ -19,7 +19,11 @@ export const Header = ({ setSidebarOpen }) => {
         <Link to="/" className="header__logo">
           <Logo id="header__logo" />
         </Link>
-        <ListCategories id="header__list" />
+        <ListCategories
+          className="list-categories--home"
+          active={"active--home"}
+          id="header__list"
+        />
       </div>
       <div className="header-right">
         <div

@@ -9,6 +9,7 @@ export const ListCategories = ({ active, ...rest }) => {
     <div id={`${rest.id}`} className={`${rest.className}__container`}>
       <ul className={`${rest.className}`}>
         <NavLink
+          reloadDocument
           to={`/`}
           className={({ isActive }) => (isActive ? `link ${active}` : "link")}
         >
@@ -18,7 +19,8 @@ export const ListCategories = ({ active, ...rest }) => {
           categories.map((category, key) => {
             return (
               <NavLink
-                to={`/category/${category.name}`}
+                reloadDocument
+                to={`/category/${category.name}/${category.id}`}
                 className={({ isActive }) =>
                   isActive ? `link ${active}` : "link"
                 }

@@ -5,7 +5,13 @@ const Context = createContext();
 
 const ContextProvider = (props) => {
   const { categories, getCategories } = Categories();
-  const { products, getTenProducts, product, getOneProduct } = GetProduct();
+  const {
+    products,
+    getTenProducts,
+    product,
+    getOneProduct,
+    getProductForCategory,
+  } = GetProduct();
   return (
     <Context.Provider
       value={{
@@ -15,6 +21,7 @@ const ContextProvider = (props) => {
         getTenProducts,
         product,
         getOneProduct,
+        getProductForCategory,
       }}
     >
       {props.children}
