@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Context } from "../data/Context";
 import { Icon } from "./icons/Icon";
 
-export const ProductHome = () => {
-  const { products } = useContext(Context);
+export const ProductHome = ({ products }) => {
   return (
     <>
       {!!products &&
@@ -13,7 +11,7 @@ export const ProductHome = () => {
             <Link
               className="link"
               key={product.id}
-              to={`product/${product.id}`}
+              to={`../product/${product.id}`}
             >
               <div className="product">
                 <img

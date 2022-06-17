@@ -33,6 +33,7 @@ export const App = () => {
         </SidebarView>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category/:category" element={<Home />} />
           <Route path="/login/" exact element={<Login />} />
           <Route path="/login/new_password" element={<NewPassword />} />
           <Route

@@ -6,7 +6,6 @@ import { Context } from "../data/Context";
 
 export const Product = () => {
   const { getOneProduct, product } = useContext(Context);
-
   const params = useParams();
 
   useEffect(() => {

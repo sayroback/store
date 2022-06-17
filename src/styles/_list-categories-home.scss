@@ -1,14 +1,14 @@
-.list-categories__container::-webkit-scrollbar {
+.list-categories--home__container::-webkit-scrollbar {
   display: none;
-}
-.list-categories__container {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .list-categories--home {
   display: flex;
 
+  &__container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
   &__item {
     list-style: none;
     padding: 6px 15px;
@@ -16,7 +16,7 @@
     white-space: nowrap;
   }
 }
-.active {
+.active--home {
   color: $hospital-green;
   border: 1px solid $hospital-green;
   border-radius: 10px;
