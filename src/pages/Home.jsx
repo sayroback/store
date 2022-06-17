@@ -11,10 +11,6 @@ export const Home = () => {
         <ListCategories className="list-categories__container" />
         <div className="products">
           <ProductHome />
-          <ProductHome />
-          <ProductHome />
-          <ProductHome />
-          <ProductHome />
         </div>
       </main>
     </div>
