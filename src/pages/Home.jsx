@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ListCategories } from "../components/Header/ListCategories";
+import Pagination from "../components/Pagination";
 import { ProductHome } from "../components/ProductHome";
 import { SearchBar } from "../components/SearchBar";
 import { Context } from "../data/Context";
@@ -24,6 +25,7 @@ export const Home = () => {
         <div className="products">
           <ProductHome products={products} />
         </div>
+        <Pagination />
       </main>
     </div>
   );

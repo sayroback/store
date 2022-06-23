@@ -9,7 +9,7 @@ const ContextProvider = (props) => {
   const { carl, setCarl, addCarl } = useShoppingCart();
   const {
     products,
-    getTenProducts,
+    getSomeProducts,
     product,
     getOneProduct,
     getProductForCategory,
@@ -20,7 +20,7 @@ const ContextProvider = (props) => {
         categories,
         getCategories,
         products,
-        getTenProducts,
+        getSomeProducts,
         product,
         getOneProduct,
         getProductForCategory,

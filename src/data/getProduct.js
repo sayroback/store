@@ -8,10 +8,11 @@ const fakeStore = axios.create({
 export const GetProduct = () => {
   const [products, setProducts] = useState();
   const [product, setProduct] = useState();
+  const [allProducts, setAllProducts] = useState();
 
-  const getTenProducts = async () => {
+  const getSomeProducts = async () => {
     try {
-      const res = await fakeStore.get("/products?offset=0&limit=10");
+      const res = await fakeStore.get("/products?offset=0&limit=12");
       setProducts(res.data);
     } catch (error) {
       console.log(error);
@@ -29,13 +30,14 @@ export const GetProduct = () => {
 
   const getProductForCategory = async (props) => {
     let category = `${props}`;
-    let urlapi = `https://api.escuelajs.co/api/v1/categories/${category}/products?offset=0&limit=10`;
 
     if (!props) {
-      getTenProducts();
+      getSomeProducts();
     } else {
       try {
-        const res = await axios.get(urlapi);
+        const res = await fakeStore.get(
+          `/categories/${category}/products?offset=0&limit=12`
+        );
         setProducts(res.data);
       } catch (error) {
         console.log(error);
@@ -44,12 +46,12 @@ export const GetProduct = () => {
   };
 
   useEffect(() => {
-    getTenProducts();
+    getSomeProducts();
   }, []);
 
   return {
     products,
-    getTenProducts,
+    getSomeProducts,
     product,
     getOneProduct,
     getProductForCategory,

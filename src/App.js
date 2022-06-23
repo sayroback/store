@@ -29,7 +29,7 @@ export const App = () => {
       <BrowserRouter>
         <Header setSidebarOpen={setSidebarOpen} />
         <SidebarView>
-          <Sidebar />
+          <Sidebar setSidebarOpen={setSidebarOpen} />
         </SidebarView>
         <Routes>
           <Route path="/" element={<Home />} />

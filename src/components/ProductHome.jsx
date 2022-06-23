@@ -11,7 +11,11 @@ export const ProductHome = ({ products }) => {
         products.map((product, key) => {
           return (
             <div key={product.id} className="product">
-              <Link className="link" to={`../product/${product.id}`}>
+              <Link
+                reloadDocument
+                className="link"
+                to={`../product/${product.id}`}
+              >
                 <img
                   src={product.images[0]}
                   alt="product"
@@ -19,7 +23,11 @@ export const ProductHome = ({ products }) => {
                 />
               </Link>
               <div className="product__container__details">
-                <Link className="link" to={`../product/${product.id}`}>
+                <Link
+                  reloadDocument
+                  className="link"
+                  to={`../product/${product.id}`}
+                >
                   <div>
                     <h3 className="product__title">{product.title}</h3>
                     <p className="product__description">
